@@ -1,0 +1,13 @@
+secret_number=7
+attemps=3
+for i in range(attemps):
+    guess = int(input("Guess the number"))
+    if guess > secret_number:
+        print("Too high try again")
+    elif guess < secret_number:
+        print("Too low try again")
+    else:
+        print("Well done you find the number")
+        break
+else:
+    print("Unfortunatly your attemps ended")
