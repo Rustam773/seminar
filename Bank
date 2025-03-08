@@ -1,0 +1,19 @@
+balance = int(input("Enter your initial deposit "))
+
+while True:
+    action = input("Deposid (D), Withdraw (W), Exit (X): ").strip().lower()
+
+    if action == "x":
+        print(f"Your updated balance: {balance} AZN")
+        break
+
+    if action in ["d", "w"]:
+        amount = int(input("Enter amount: "))
+
+        if action == "w" and amount > balance:
+            print("Error! Your balance is insufficient.")
+        else:
+            balance += amount if action == "d" else -amount
+            print(f"New balance: {balance} AZN")
+    else:
+        print("Wrong chooise! please enter 'D', 'W'  'X'.")
