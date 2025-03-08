@@ -1,4 +1,4 @@
-# tapsiriglar
+# rockpaperscissors
 choise=["rock","paper","scissors"]
 player1=input("choose:")
 player2=input("choose:")
