@@ -1,0 +1,14 @@
+a=float(input("Enter number"))
+b=float(input("Enter number"))
+c=input("Enter an operator (+,-,*,/)")
+if c== "+":
+    print(a+b)
+elif c=="-":
+    print(a-b)
+elif c=="*":
+    print(a*b)
+elif c=="/":
+    if b!=0:
+        print(a/b)
+    else:
+        print("Error:(Division by zero not allowed)")
