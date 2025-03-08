@@ -1,0 +1,11 @@
+a=input("Enter the currency AZN")
+b=int(input("Select the currency which you want to convert:\n1.dollar\n2.euro\n3.TL"))
+dollar=1
+euro=2
+TL=3
+if b==dollar:
+    print(float(a)*0.59)
+elif b==euro:
+    print(float(a)*0.56)
+elif b==TL:
+    print(float(a)*21,41)
