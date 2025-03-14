@@ -1,0 +1,25 @@
+def discount_calculator():
+    try:
+
+        amount = float(input("Enter the total purchase amount: "))
+
+
+        threshold = 100
+        discount_rate = 10
+
+
+        if amount >= threshold:
+            discount = (amount * discount_rate) / 100
+            final_amount = amount - discount
+            print(f"Discount applied! You saved {discount:.2f} currency units.")
+        else:
+            final_amount = amount
+            print("No discount applied.")
+
+
+        print(f"Total amount to pay: {final_amount:.2f} currency units")
+
+    except ValueError:
+        print("Please enter a valid number!")  
+
+discount_calculator()
