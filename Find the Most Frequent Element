@@ -1,0 +1,6 @@
+most_frequence=[1, 3, 2, 3, 4, 3, 2, 2]
+output=[]
+for i in most_frequence:
+  if most_frequence.count(i) > 1 and not i in output:
+    output.append(i)
+print(output[1])
