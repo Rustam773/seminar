@@ -1,0 +1,8 @@
+def numbers(a):
+    s = ""
+    i = 1
+    while i <= a:
+        s = s + str(i)
+        i = i + 1
+    return s
+print(numbers(5))
