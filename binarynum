@@ -1,0 +1,9 @@
+def binarynumbers(a):
+    s = ""
+    if a==0 or a==1:
+        print(a)
+    while a>0:
+        s=s+str((a%2))
+        a=a//2
+    return s
+print(binarynumbers(0))
