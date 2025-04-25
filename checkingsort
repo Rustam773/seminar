@@ -1,0 +1,8 @@
+def sortedlist(s):
+    for i in range(len(s)-1):
+        if s[i]>s[i+1]:
+            return False
+    else:
+        return True
+s=[1,9,6]
+print(sortedlist(s))
